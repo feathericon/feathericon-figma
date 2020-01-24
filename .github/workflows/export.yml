@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: primer/figma-action@v1.0.0-alpha.2
         with:
-          args: "format=svg outputDir=./build/"
+          args: format=svg outputDir=./build/
         env:
           FIGMA_FILE_URL: "https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon"
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
