@@ -11,3 +11,7 @@ jobs:
         env:
           FIGMA_FILE_URL: "https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon"
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+      - uses: actions/upload-artifact@master
+        with:
+          name: feathericon
+          path: ./build
