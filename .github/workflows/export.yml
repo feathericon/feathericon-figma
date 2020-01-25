@@ -19,4 +19,4 @@ jobs:
         with:
           name: feathericon
     
-      - run: cat feathericon
+      - run: cat feathericon/svg/*.svg
