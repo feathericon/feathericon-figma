@@ -15,7 +15,6 @@ jobs:
         with:
           name: feathericon
           path: ./build
-      - uses: actions/checkout@v1
       - uses: actions/download-artifact@v1
         with:
           name: featehricon
