@@ -17,6 +17,6 @@ jobs:
           path: ./build
       - uses: actions/download-artifact@v1
         with:
-          name: featehricon
+          name: feathericon
     
       - run: cat feathericon
