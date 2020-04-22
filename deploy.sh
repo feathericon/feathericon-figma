@@ -9,6 +9,7 @@ rm -rf feathericon-figma.png
 rm -rf package.json
 rm -rf README.md
 rm -rf export.js
+rm -rf deploy.sh
 
 if [[ "false" != "$TRAVIS_PULL_REQUEST" ]]; then
 	echo "Not deploying pull requests."
@@ -24,7 +25,8 @@ echo "*.json
 *.yml
 .DS_store
 *.log
-.npmignore" > .gitignore
+.npmignore
+note_modules" > .gitignore
 
 git init
 git config user.name "featherplain"
