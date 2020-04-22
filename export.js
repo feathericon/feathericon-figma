@@ -2,10 +2,10 @@ const FIGMA_TOKEN = '${FIGMA_TOKEN}'
 const FIGMA_FILE_URL = 'https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon?version-id=301203044&node-id=0%3A1&viewport=86%2C25%2C3.1148648262023926'
 
 const got = require('got')
-const ensureDir, writeFile = require('fs-extra')
-const join, resolve = require('path')
+const {ensureDir, writeFile} = require('fs-extra')
+const {join, resolve} = require('path')
 const Figma = require('figma-js')
-const FIGMA_TOKEN, FIGMA_FILE_URL = process.env
+const {FIGMA_TOKEN, FIGMA_FILE_URL} = process.env
 const PQueue = require('p-queue')
 
 const options = {
