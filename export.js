@@ -27,10 +27,9 @@ const client = Figma.Client({
 
 // Fail if there's no figma file key
 let fileId = null
-let FIGMA_FILE_URL = 'https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon?version-id=301203044&node-id=0%3A1&viewport=86%2C25%2C3.1148648262023926'
 if (!fileId) {
   try {
-    fileId = FIGMA_FILE_URL.match(/file\/([a-z0-9]+)\//i)[1]
+    fileId = ${FIGMA_FILE_URL}.match(/file\/([a-z0-9]+)\//i)[1]
   } catch (e) {
     throw Error('Cannot find FIGMA_FILE_URL key in process!')
   }
