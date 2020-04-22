@@ -1,0 +1,27 @@
+{
+  "name": "@feathericon/feathericon-figma",
+  "version": "0.0.1",
+  "description": "Simply generic vector icon collection for Figma",
+  "scripts": {
+    "start": "node export.js"
+  },
+  "repository": "https://github.com/feathericon/feathericon-figma",
+  "bugs": {
+    "url": "https://github.com/feathericon/feathericon-figma/issues"
+  },
+  "keywords": [
+    "design-system",
+    "figma",
+    "design",
+    "image",
+    "exporter"
+  ],
+  "author": "featherplain",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "got": "^8.3.0",
+    "p-queue": "^2.4.2",
+    "figma-js": "^1.6.0"
+  }
+}
