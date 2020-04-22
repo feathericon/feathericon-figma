@@ -9,9 +9,7 @@ const FIGMA_TOKEN, FIGMA_FILE_URL = process.env
 const PQueue = require('p-queue')
 
 const options = {
-  format: 'jpg',
-  outputDir: './build/',
-  scale: '1'
+  format: 'svg'
 }
 
 for(const arg of process.argv.slice(2)) {
