@@ -3,6 +3,7 @@ const {ensureDir, writeFile} = require('fs-extra')
 const {join, resolve} = require('path')
 const Figma = require('figma-js')
 // const {FIGMA_TOKEN, FIGMA_FILE_URL} = process.env
+const FIGMA_TOKEN = '${FIGMA_TOKEN}'
 const PQueue = require('p-queue')
 
 const options = {
@@ -21,7 +22,7 @@ if(!FIGMA_TOKEN) {
 }
 
 const client = Figma.Client({
-  personalAccessToken: '${FIGMA_TOKEN}'
+  personalAccessToken: 'FIGMA_TOKEN'
 })
 
 // Fail if there's no figma file key
