@@ -4,6 +4,7 @@ set -e
 
 rm -rf .git
 rm -rf node_modules
+rm -rf images
 rm -r .gitignore
 rm -r download-feathericon.png
 rm -r feathericon-figma.png

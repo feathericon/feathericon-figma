@@ -1,12 +1,15 @@
 # feathericon Figma
-![Export SVG from Figma](https://github.com/featherplain/figma-sample/workflows/Export%20SVG%20from%20Figma/badge.svg?branch=master&event=push)
+
+![Export SVG from Figma](https://travis-ci.org/feathericon/feathericon-figma.svg?branch=master)
+
+![feathericon](./images/feathericon.png)
 
 ## Download SVG
-You can download feathericon SVG from each [Actions](https://github.com/feathericon/feathericon-figma/actions).
 
-![download-feathericon](./download-feathericon.png)
+<a href="https://github.com/feathericon/feathericon-figma/archive/release.zip"><img src="./images/button.png" width="392" height="64" alt="download feathericon"></a>
 
-## Figma
+## Figma file URL
 https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon?node-id=0%3A1
 
-![feathericon-figma](./feathericon-figma.png)
+## LICENSE
+MIT (C) [featherplain](https://github.com/featherplain)
