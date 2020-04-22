@@ -2,7 +2,7 @@ const got = require('got')
 const {ensureDir, writeFile} = require('fs-extra')
 const {join, resolve} = require('path')
 const Figma = require('figma-js')
-const {FIGMA_TOKEN, FIGMA_FILE_URL} = process.env
+const FIGMA_TOKEN = process.env
 const PQueue = require('p-queue')
 
 const options = {
@@ -27,15 +27,16 @@ const client = Figma.Client({
 
 // Fail if there's no figma file key
 let fileId = null
+let FIGMA_FILE_URL = '${FIGMA_FILE_URL}'
 if (!fileId) {
   try {
-    fileId = '${FIGMA_FILE_URL}'.match(/file\/([a-z0-9]+)\//i)[1]
+    fileId = FIGMA_FILE_URL.match(/file\/([a-z0-9]+)\//i)[1]
   } catch (e) {
     throw Error('Cannot find FIGMA_FILE_URL key in process!')
   }
 }
 
-console.log(`Exporting ${FIGMA_FILE_URL} components`)
+console.log(`Exporting FIGMA_FILE_URL components`)
 client.file(fileId)
 
   .then(({ data }) => {
