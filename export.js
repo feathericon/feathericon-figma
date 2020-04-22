@@ -2,7 +2,7 @@ const got = require('got')
 const {ensureDir, writeFile} = require('fs-extra')
 const {join, resolve} = require('path')
 const Figma = require('figma-js')
-const {FIGMA_TOKEN, FIGMA_FILE_URL} = process.env
+// const {FIGMA_TOKEN, FIGMA_FILE_URL} = process.env
 const PQueue = require('p-queue')
 
 const options = {
