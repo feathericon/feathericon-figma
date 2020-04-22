@@ -21,7 +21,7 @@ if(!FIGMA_TOKEN) {
 }
 
 const client = Figma.Client({
-  personalAccessToken: ${FIGMA_TOKEN}
+  personalAccessToken: '${FIGMA_TOKEN}'
 })
 
 // Fail if there's no figma file key
