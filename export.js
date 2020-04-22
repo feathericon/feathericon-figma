@@ -2,8 +2,10 @@ const got = require('got')
 const {ensureDir, writeFile} = require('fs-extra')
 const {join, resolve} = require('path')
 const Figma = require('figma-js')
-const FIGMA_TOKEN = process.env
 const PQueue = require('p-queue')
+
+const FIGMA_TOKEN = '42497-d4256642-d663-4308-8121-5a587c407219'
+const FIGMA_FILE_URL = 'https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon?version-id=301203044&node-id=0%3A1&viewport=86%2C25%2C3.1148648262023926'
 
 const options = {
   format: 'svg',
@@ -22,12 +24,11 @@ if(!FIGMA_TOKEN) {
 }
 
 const client = Figma.Client({
-  personalAccessToken: '${FIGMA_TOKEN}'
+  personalAccessToken: FIGMA_TOKEN
 })
 
 // Fail if there's no figma file key
 let fileId = null
-let FIGMA_FILE_URL = 'https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon?version-id=301203044&node-id=0%3A1&viewport=86%2C25%2C3.1148648262023926'
 if (!fileId) {
   try {
     fileId = FIGMA_FILE_URL.match(/file\/([a-z0-9]+)\//i)[1]

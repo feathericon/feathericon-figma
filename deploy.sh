@@ -3,13 +3,14 @@
 set -e
 
 rm -rf .git
+rm -rf node_modules
 rm -r .gitignore
-rm -rf download-feathericon.png
-rm -rf feathericon-figma.png
-rm -rf package.json
-rm -rf README.md
-rm -rf export.js
-rm -rf deploy.sh
+rm -r download-feathericon.png
+rm -r feathericon-figma.png
+rm -r package.json
+rm -r README.md
+rm -r export.js
+rm -r deploy.sh
 
 if [[ "false" != "$TRAVIS_PULL_REQUEST" ]]; then
 	echo "Not deploying pull requests."
