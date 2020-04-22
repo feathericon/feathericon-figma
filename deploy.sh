@@ -8,7 +8,7 @@ rm -rf download-feathericon.png
 rm -rf feathericon-figma.png
 rm -rf package.json
 rm -rf README.md
-rm -ef export.js
+rm -rf export.js
 
 if [[ "false" != "$TRAVIS_PULL_REQUEST" ]]; then
 	echo "Not deploying pull requests."
