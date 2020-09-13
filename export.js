@@ -5,7 +5,7 @@ const Figma = require('figma-js')
 const PQueue = require('p-queue')
 
 const FIGMA_TOKEN = '42497-d4256642-d663-4308-8121-5a587c407219'
-const FIGMA_FILE_URL = 'https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon?version-id=301203044&node-id=0%3A1&viewport=86%2C25%2C3.1148648262023926'
+const FIGMA_FILE_URL = 'https://www.figma.com/file/K7LUOW5a89CttKlexrd3PAP6/feathericon?version-id=452054080&node-id=0%3A1&viewport=266%2C124%2C1.9152461290359497'
 
 const options = {
   format: 'svg',
