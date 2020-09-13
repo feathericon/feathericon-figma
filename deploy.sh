@@ -6,8 +6,8 @@ rm -rf .git
 rm -rf node_modules
 rm -rf images
 rm -r .gitignore
-rm -r download-feathericon.png
-rm -r feathericon-figma.png
+rm -r images/button.png
+rm -r images/feathericon.png
 rm -r package.json
 rm -r README.md
 rm -r export.js
