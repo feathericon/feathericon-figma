@@ -6,8 +6,7 @@ rm -rf .git
 rm -rf node_modules
 rm -rf images
 rm -r .gitignore
-rm -r images/button.png
-rm -r images/feathericon.png
+rm -rf images
 rm -r package.json
 rm -r README.md
 rm -r export.js
