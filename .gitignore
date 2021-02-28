@@ -1,0 +1,6 @@
+*.json
+*.yml
+.DS_store
+*.log
+.npmignore
+note_modules
